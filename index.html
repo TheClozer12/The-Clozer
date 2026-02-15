@@ -67,7 +67,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;600;700;900&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293781311614479" crossorigin="anonymous"></script>
 </head>
@@ -80,13 +80,22 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#hero">홈</a></li>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#scenarios">훈련하기</a></li>
-                <li><a href="#tips">면접 꿀팁</a></li>
+                <li><a href="#hero" data-i18n="nav_home">홈</a></li>
+                <li><a href="#about" data-i18n="nav_about">소개</a></li>
+                <li><a href="#scenarios" data-i18n="nav_train">훈련하기</a></li>
+                <li><a href="#tips" data-i18n="nav_tips">면접 꿀팁</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">문의</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">문의</a></li>
             </ul>
+            <div class="lang-selector" id="lang-selector">
+                <button class="lang-btn" id="lang-btn">🌐 KO</button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button data-lang="ko" class="lang-option active">🇰🇷 한국어</button>
+                    <button data-lang="en" class="lang-option">🇺🇸 English</button>
+                    <button data-lang="ja" class="lang-option">🇯🇵 日本語</button>
+                    <button data-lang="es" class="lang-option">🇪🇸 Español</button>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -158,6 +167,15 @@
             </div>
             <div class="chat-options" id="chat-options">
                 <!-- 선택지가 여기에 추가됨 -->
+            </div>
+            <div class="chat-input-area" id="chat-input-area">
+                <div class="chat-hint" id="chat-hint"></div>
+                <div class="chat-input-wrap">
+                    <textarea id="chat-input" class="chat-input" rows="1" placeholder="답변을 입력하세요..."></textarea>
+                    <button id="chat-send-btn" class="chat-send-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
