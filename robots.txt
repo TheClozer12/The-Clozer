@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theclozer12.github.io/The-Clozer/sitemap.xml
