@@ -39,7 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
             contact_submit: '보내기', contact_sending: '전송 중...',
             contact_success: '문의가 전송되었습니다!',
             privacy_link: '개인정보처리방침', terms_link: '이용약관',
-            difficulty: '초급', time_min: '분', questions_suffix: '문항'
+            difficulty: '초급', time_min: '분', questions_suffix: '문항',
+            leave_title: '훈련을 중단하시겠습니까?',
+            leave_desc: '지금 나가면 현재 진행 중인 훈련 내용이 사라집니다.',
+            leave_cancel: '계속 훈련하기',
+            leave_confirm: '나가기'
         },
         en: {
             nav_home: 'Home', nav_about: 'About', nav_train: 'Train', nav_tips: 'Tips', nav_contact: 'Contact',
@@ -78,7 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
             contact_submit: 'Send', contact_sending: 'Sending...',
             contact_success: 'Your message has been sent!',
             privacy_link: 'Privacy Policy', terms_link: 'Terms of Service',
-            difficulty: 'Beginner', time_min: 'min', questions_suffix: ' questions'
+            difficulty: 'Beginner', time_min: 'min', questions_suffix: ' questions',
+            leave_title: 'Leave training?',
+            leave_desc: 'If you leave now, your current progress will be lost.',
+            leave_cancel: 'Continue Training',
+            leave_confirm: 'Leave'
         },
         ja: {
             nav_home: 'ホーム', nav_about: '紹介', nav_train: 'トレーニング', nav_tips: 'ヒント', nav_contact: 'お問合せ',
@@ -117,7 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
             contact_submit: '送信', contact_sending: '送信中...',
             contact_success: 'お問い合わせが送信されました！',
             privacy_link: 'プライバシーポリシー', terms_link: '利用規約',
-            difficulty: '初級', time_min: '分', questions_suffix: '問'
+            difficulty: '初級', time_min: '分', questions_suffix: '問',
+            leave_title: 'トレーニングを中断しますか？',
+            leave_desc: '今離れると、現在の進行状況が失われます。',
+            leave_cancel: 'トレーニングを続ける',
+            leave_confirm: '離れる'
         },
         es: {
             nav_home: 'Inicio', nav_about: 'Acerca de', nav_train: 'Entrenar', nav_tips: 'Consejos', nav_contact: 'Contacto',
@@ -156,7 +168,11 @@ document.addEventListener('DOMContentLoaded', () => {
             contact_submit: 'Enviar', contact_sending: 'Enviando...',
             contact_success: '¡Tu mensaje ha sido enviado!',
             privacy_link: 'Política de privacidad', terms_link: 'Términos de servicio',
-            difficulty: 'Principiante', time_min: 'min', questions_suffix: ' preguntas'
+            difficulty: 'Principiante', time_min: 'min', questions_suffix: ' preguntas',
+            leave_title: '¿Salir del entrenamiento?',
+            leave_desc: 'Si sales ahora, perderás tu progreso actual.',
+            leave_cancel: 'Continuar entrenamiento',
+            leave_confirm: 'Salir'
         }
     };
 
@@ -1095,12 +1111,62 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('home-btn').addEventListener('click', () => showPage('hero'));
     }
 
+    // ==================== LEAVE CONFIRMATION ====================
+    const leaveModal = document.getElementById('leave-modal');
+    const leaveModalTitle = document.getElementById('leave-modal-title');
+    const leaveModalDesc = document.getElementById('leave-modal-desc');
+    const leaveCancelBtn = document.getElementById('leave-cancel');
+    const leaveConfirmBtn = document.getElementById('leave-confirm');
+    let pendingLeaveTarget = null;
+
+    function isInTraining() {
+        return pages.training.classList.contains('active');
+    }
+
+    function showLeaveModal(targetHref) {
+        pendingLeaveTarget = targetHref;
+        leaveModalTitle.textContent = t('leave_title');
+        leaveModalDesc.textContent = t('leave_desc');
+        leaveCancelBtn.textContent = t('leave_cancel');
+        leaveConfirmBtn.textContent = t('leave_confirm');
+        leaveModal.classList.add('active');
+    }
+
+    function hideLeaveModal() {
+        leaveModal.classList.remove('active');
+        pendingLeaveTarget = null;
+    }
+
+    leaveCancelBtn.addEventListener('click', hideLeaveModal);
+
+    leaveConfirmBtn.addEventListener('click', () => {
+        hideLeaveModal();
+        showPage('hero');
+        if (pendingLeaveTarget && pendingLeaveTarget !== '#hero') {
+            setTimeout(() => {
+                const target = document.querySelector(pendingLeaveTarget);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+        pendingLeaveTarget = null;
+    });
+
+    leaveModal.addEventListener('click', (e) => {
+        if (e.target === leaveModal) hideLeaveModal();
+    });
+
     // ==================== EVENT LISTENERS ====================
     startBtn.addEventListener('click', () => {
         document.getElementById('scenarios').scrollIntoView({ behavior: 'smooth' });
     });
 
-    trainingBack.addEventListener('click', () => showPage('hero'));
+    trainingBack.addEventListener('click', () => {
+        if (isInTraining()) {
+            showLeaveModal('#hero');
+        } else {
+            showPage('hero');
+        }
+    });
 
     // ==================== NAVIGATION ====================
     if (navHamburger && navLinks) {
@@ -1116,14 +1182,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth scroll
+    // Smooth scroll + training leave guard
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href === '#') return;
+            e.preventDefault();
+
+            // If in training, show leave confirmation
+            if (isInTraining()) {
+                showLeaveModal(href);
+                return;
+            }
+
             const target = document.querySelector(href);
             if (target) {
-                e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });

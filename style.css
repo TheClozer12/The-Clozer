@@ -998,6 +998,65 @@ body.light-mode .form-group textarea {
 .modal-body ul { padding-left: 1.2rem; margin-bottom: 0.4rem; }
 .modal-body li { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.8; }
 
+/* ==================== LEAVE MODAL ==================== */
+.leave-modal-content {
+    max-width: 400px;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.leave-modal-content h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+    padding-right: 0;
+}
+
+.leave-modal-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.leave-modal-actions {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.leave-modal-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.leave-btn-cancel {
+    background: linear-gradient(135deg, var(--accent), #059669);
+    color: #fff;
+    border: none;
+}
+
+.leave-btn-cancel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.leave-btn-confirm {
+    background: none;
+    border: 1px solid var(--bg-card-border);
+    color: var(--text-muted);
+}
+
+.leave-btn-confirm:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
 /* ==================== TOAST ==================== */
 .toast {
     position: fixed;
