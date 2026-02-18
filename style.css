@@ -1965,6 +1965,27 @@ img { max-width: 100%; display: block; }
     overflow-y: auto;
 }
 
+#simulation.page-overlay {
+    background: linear-gradient(135deg, #0a0c10 0%, #111528 40%, #0f1115 70%, #0d1520 100%);
+    animation: simBgShift 12s ease-in-out infinite alternate;
+}
+
+#simulation.page-overlay::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(108, 92, 231, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(0, 255, 153, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes simBgShift {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
 .sim-container {
     max-width: 900px;
     margin: 0 auto;
@@ -1972,6 +1993,8 @@ img { max-width: 100%; display: block; }
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .sim-header {

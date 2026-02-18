@@ -201,11 +201,11 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#how-it-works" id="nav-how">How It Works</a></li>
+                <li><a href="#features" id="nav-features">Features</a></li>
+                <li><a href="#demo" id="nav-demo">Demo</a></li>
+                <li><a href="#pricing" id="nav-pricing">Pricing</a></li>
+                <li><a href="#faq" id="nav-faq">FAQ</a></li>
                 <li><a href="#" class="nav-cta-btn cta-open-auth" id="nav-start-btn">Start Free</a></li>
             </ul>
             <div class="nav-right">
@@ -226,16 +226,16 @@
                         <div class="nav-dropdown-divider"></div>
                         <button class="nav-dropdown-item" id="nav-dashboard-btn">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-                            Dashboard
+                            <span id="nav-dashboard-text">Dashboard</span>
                         </button>
                         <button class="nav-dropdown-item" id="nav-settings-btn">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-                            Settings
+                            <span id="nav-settings-text">Settings</span>
                         </button>
                         <div class="nav-dropdown-divider"></div>
                         <button class="nav-dropdown-item nav-dropdown-logout" id="nav-logout-btn">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-                            Sign Out
+                            <span id="nav-signout-text">Sign Out</span>
                         </button>
                     </div>
                 </div>
@@ -363,19 +363,19 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                     </div>
-                    <h3>AI Dynamic Question Engine</h3>
-                    <p>Never face the same interview twice. Our AI generates contextually relevant questions based on your target role, industry, and experience level.</p>
+                    <h3 id="feat1-title">AI Dynamic Question Engine</h3>
+                    <p id="feat1-desc">Never face the same interview twice. Our AI generates contextually relevant questions based on your target role, industry, and experience level.</p>
                     <ul class="feature-points">
-                        <li>Adapts in real-time based on your responses</li>
-                        <li>Covers behavioral, technical, and situational questions</li>
-                        <li>Growing question library across industries</li>
+                        <li id="feat1-li1">Adapts in real-time based on your responses</li>
+                        <li id="feat1-li2">Covers behavioral, technical, and situational questions</li>
+                        <li id="feat1-li3">Growing question library across industries</li>
                     </ul>
                     <div class="feature-visual">
                         <div class="visual-placeholder">
-                            <div class="visual-bar" style="width: 85%"><span>Behavioral</span></div>
-                            <div class="visual-bar" style="width: 72%"><span>Technical</span></div>
-                            <div class="visual-bar" style="width: 68%"><span>Situational</span></div>
-                            <div class="visual-bar" style="width: 90%"><span>Follow-up</span></div>
+                            <div class="visual-bar" style="width: 85%"><span id="feat1-bar1">Behavioral</span></div>
+                            <div class="visual-bar" style="width: 72%"><span id="feat1-bar2">Technical</span></div>
+                            <div class="visual-bar" style="width: 68%"><span id="feat1-bar3">Situational</span></div>
+                            <div class="visual-bar" style="width: 90%"><span id="feat1-bar4">Follow-up</span></div>
                         </div>
                     </div>
                 </div>
@@ -384,12 +384,12 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                     </div>
-                    <h3>Resume & JD Personalization</h3>
-                    <p>Upload your resume and job description. The AI tailors every question to your exact situation.</p>
+                    <h3 id="feat2-title">Resume & JD Personalization</h3>
+                    <p id="feat2-desc">Upload your resume and job description. The AI tailors every question to your exact situation.</p>
                     <ul class="feature-points">
-                        <li>Parses skills, experience, and gaps</li>
-                        <li>Generates role-specific scenarios</li>
-                        <li>Highlights areas to strengthen</li>
+                        <li id="feat2-li1">Parses skills, experience, and gaps</li>
+                        <li id="feat2-li2">Generates role-specific scenarios</li>
+                        <li id="feat2-li3">Highlights areas to strengthen</li>
                     </ul>
                 </div>
 
@@ -397,12 +397,12 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
                     </div>
-                    <h3>Voice & Text Simulation</h3>
-                    <p>Train the way you'll perform. Practice via voice for real interviews or text for quick drills.</p>
+                    <h3 id="feat3-title">Voice & Text Simulation</h3>
+                    <p id="feat3-desc">Train the way you'll perform. Practice via voice for real interviews or text for quick drills.</p>
                     <ul class="feature-points">
-                        <li>Real-time speech-to-text</li>
-                        <li>Tone and pace analysis</li>
-                        <li>Filler word detection</li>
+                        <li id="feat3-li1">Real-time speech-to-text</li>
+                        <li id="feat3-li2">Tone and pace analysis</li>
+                        <li id="feat3-li3">Filler word detection</li>
                     </ul>
                 </div>
 
@@ -410,14 +410,14 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
-                    <h3>Multi-Dimensional AI Scoring</h3>
-                    <p>Go beyond "good" or "bad." Get precise scores across five critical dimensions.</p>
+                    <h3 id="feat4-title">Multi-Dimensional AI Scoring</h3>
+                    <p id="feat4-desc">Go beyond "good" or "bad." Get precise scores across five critical dimensions.</p>
                     <ul class="feature-points">
-                        <li>Structure &amp; Organization</li>
-                        <li>Clarity &amp; Articulation</li>
-                        <li>Persuasiveness &amp; Impact</li>
-                        <li>Confidence &amp; Delivery</li>
-                        <li>Relevance &amp; Precision</li>
+                        <li id="feat4-li1">Structure &amp; Organization</li>
+                        <li id="feat4-li2">Clarity &amp; Articulation</li>
+                        <li id="feat4-li3">Persuasiveness &amp; Impact</li>
+                        <li id="feat4-li4">Confidence &amp; Delivery</li>
+                        <li id="feat4-li5">Relevance &amp; Precision</li>
                     </ul>
                 </div>
 
@@ -425,12 +425,12 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                     </div>
-                    <h3>Adaptive Difficulty</h3>
-                    <p>The AI adjusts challenge level based on your performance. Start easy, graduate to executive-level scenarios.</p>
+                    <h3 id="feat5-title">Adaptive Difficulty</h3>
+                    <p id="feat5-desc">The AI adjusts challenge level based on your performance. Start easy, graduate to executive-level scenarios.</p>
                     <ul class="feature-points">
-                        <li>3 difficulty tiers: Foundation, Advanced, Elite</li>
-                        <li>Auto-escalation on high scores</li>
-                        <li>Pressure simulation mode</li>
+                        <li id="feat5-li1">3 difficulty tiers: Foundation, Advanced, Elite</li>
+                        <li id="feat5-li2">Auto-escalation on high scores</li>
+                        <li id="feat5-li3">Pressure simulation mode</li>
                     </ul>
                 </div>
 
@@ -438,12 +438,12 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                     </div>
-                    <h3>Performance Analytics</h3>
-                    <p>Track every metric that matters. See trends, identify weaknesses, and measure your growth.</p>
+                    <h3 id="feat6-title">Performance Analytics</h3>
+                    <p id="feat6-desc">Track every metric that matters. See trends, identify weaknesses, and measure your growth.</p>
                     <ul class="feature-points">
-                        <li>Session-over-session comparison</li>
-                        <li>Dimension-level trend charts</li>
-                        <li>Exportable progress reports</li>
+                        <li id="feat6-li1">Session-over-session comparison</li>
+                        <li id="feat6-li2">Dimension-level trend charts</li>
+                        <li id="feat6-li3">Exportable progress reports</li>
                     </ul>
                 </div>
 
@@ -451,12 +451,12 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
                     </div>
-                    <h3>Simulation Replay</h3>
-                    <p>Review any past session with full transcript, scores, and AI-generated improvement suggestions.</p>
+                    <h3 id="feat7-title">Simulation Replay</h3>
+                    <p id="feat7-desc">Review any past session with full transcript, scores, and AI-generated improvement suggestions.</p>
                     <ul class="feature-points">
-                        <li>Side-by-side answer comparison</li>
-                        <li>AI-rewritten model answers</li>
-                        <li>Bookmark key moments</li>
+                        <li id="feat7-li1">Side-by-side answer comparison</li>
+                        <li id="feat7-li2">AI-rewritten model answers</li>
+                        <li id="feat7-li3">Bookmark key moments</li>
                     </ul>
                 </div>
 
@@ -464,12 +464,12 @@
                     <div class="feature-icon-wrap">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                     </div>
-                    <h3>Mastery Loop System</h3>
-                    <p>Don't just practice. Master. Repeat scenarios until you consistently hit your target score threshold.</p>
+                    <h3 id="feat8-title">Mastery Loop System</h3>
+                    <p id="feat8-desc">Don't just practice. Master. Repeat scenarios until you consistently hit your target score threshold.</p>
                     <ul class="feature-points">
-                        <li>Set personal score targets</li>
-                        <li>Unlock next difficulty on mastery</li>
-                        <li>Achievement badges and streaks</li>
+                        <li id="feat8-li1">Set personal score targets</li>
+                        <li id="feat8-li2">Unlock next difficulty on mastery</li>
+                        <li id="feat8-li3">Achievement badges and streaks</li>
                     </ul>
                 </div>
             </div>
@@ -480,9 +480,9 @@
     <section id="ai-scoring" class="scoring-section section-dark" aria-label="AI Scoring Engine">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">AI Scoring Engine</span>
-                <h2 class="section-title">Transparent 5-Dimension Evaluation</h2>
-                <p class="section-sub">Every response is scored across five critical dimensions using our proprietary AI engine. No black boxes — see exactly where you stand and what to improve.</p>
+                <span class="section-tag" id="scoring-tag">AI Scoring Engine</span>
+                <h2 class="section-title" id="scoring-title">Transparent 5-Dimension Evaluation</h2>
+                <p class="section-sub" id="scoring-sub">Every response is scored across five critical dimensions using our proprietary AI engine. No black boxes — see exactly where you stand and what to improve.</p>
             </div>
             <div class="scoring-layout">
                 <div class="scoring-radar">
@@ -587,7 +587,7 @@
                 <!-- Left Panel: AI Avatar -->
                 <div class="demo-panel demo-avatar-panel">
                     <div class="demo-panel-header">
-                        <span class="panel-label">AI Interviewer</span>
+                        <span class="panel-label" id="demo-panel-ai">AI Interviewer</span>
                         <span class="status-dot status-live"></span>
                     </div>
                     <div class="ai-avatar">
@@ -596,16 +596,16 @@
                         </div>
                         <div class="avatar-pulse"></div>
                     </div>
-                    <div class="avatar-name">Sarah Chen</div>
-                    <div class="avatar-role">Senior Hiring Manager</div>
-                    <div class="avatar-company">Tech Corp International</div>
-                    <div class="difficulty-badge">Advanced</div>
+                    <div class="avatar-name" id="demo-avatar-name">Sarah Chen</div>
+                    <div class="avatar-role" id="demo-avatar-role">Senior Hiring Manager</div>
+                    <div class="avatar-company" id="demo-avatar-company">Tech Corp International</div>
+                    <div class="difficulty-badge" id="demo-difficulty">Advanced</div>
                 </div>
 
                 <!-- Center Panel: Conversation -->
                 <div class="demo-panel demo-chat-panel">
                     <div class="demo-panel-header">
-                        <span class="panel-label">Simulation</span>
+                        <span class="panel-label" id="demo-panel-sim">Simulation</span>
                         <div class="demo-progress-wrap">
                             <div class="demo-progress-bar" style="width: 60%"></div>
                         </div>
@@ -639,7 +639,7 @@
                 <!-- Right Panel: Live Scores -->
                 <div class="demo-panel demo-score-panel">
                     <div class="demo-panel-header">
-                        <span class="panel-label">Live Score</span>
+                        <span class="panel-label" id="demo-panel-score">Live Score</span>
                     </div>
                     <div class="score-overall">
                         <div class="score-ring">
@@ -649,7 +649,7 @@
                             </svg>
                             <span class="score-value">82</span>
                         </div>
-                        <span class="score-label">Overall Score</span>
+                        <span class="score-label" id="demo-score-label">Overall Score</span>
                     </div>
                     <div class="score-dimensions">
                         <div class="score-dim">
@@ -689,7 +689,7 @@
                         </div>
                     </div>
                     <div class="score-keywords">
-                        <span class="panel-label" style="margin-bottom: 0.5rem; display:block;">Keywords Matched</span>
+                        <span class="panel-label" id="demo-keywords-label" style="margin-bottom: 0.5rem; display:block;">Keywords Matched</span>
                         <div class="keyword-tags">
                             <span class="kw-tag kw-hit">data-driven</span>
                             <span class="kw-tag kw-hit">stakeholder</span>
@@ -727,46 +727,46 @@
                     <div class="audience-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                     </div>
-                    <h3>Job Seekers</h3>
-                    <p class="audience-pain">Tired of freezing under pressure and fumbling through interviews?</p>
-                    <p class="audience-promise">Walk into every interview fully rehearsed, confident, and ready to close the offer.</p>
-                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth">Start Interview Training</button>
+                    <h3 id="aud1-title">Job Seekers</h3>
+                    <p class="audience-pain" id="aud1-pain">Tired of freezing under pressure and fumbling through interviews?</p>
+                    <p class="audience-promise" id="aud1-promise">Walk into every interview fully rehearsed, confident, and ready to close the offer.</p>
+                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth" id="aud1-cta">Start Interview Training</button>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
-                    <h3>Sales Professionals</h3>
-                    <p class="audience-pain">Losing deals because objections catch you off guard?</p>
-                    <p class="audience-promise">Sharpen your pitch, handle any objection, and increase your close rate by up to 40%.</p>
-                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth">Start Sales Training</button>
+                    <h3 id="aud2-title">Sales Professionals</h3>
+                    <p class="audience-pain" id="aud2-pain">Losing deals because objections catch you off guard?</p>
+                    <p class="audience-promise" id="aud2-promise">Sharpen your pitch, handle any objection, and increase your close rate by up to 40%.</p>
+                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth" id="aud2-cta">Start Sales Training</button>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
-                    <h3>Founders & Executives</h3>
-                    <p class="audience-pain">Need to nail investor pitches, board presentations, and high-stakes meetings?</p>
-                    <p class="audience-promise">Refine your executive presence and persuasion skills at the highest level.</p>
-                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth">Start Executive Training</button>
+                    <h3 id="aud3-title">Founders & Executives</h3>
+                    <p class="audience-pain" id="aud3-pain">Need to nail investor pitches, board presentations, and high-stakes meetings?</p>
+                    <p class="audience-promise" id="aud3-promise">Refine your executive presence and persuasion skills at the highest level.</p>
+                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth" id="aud3-cta">Start Executive Training</button>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     </div>
-                    <h3>Students</h3>
-                    <p class="audience-pain">Anxious about your first real interview or college admissions?</p>
-                    <p class="audience-promise">Build unshakable confidence with guided practice before it counts.</p>
-                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth">Start Student Training</button>
+                    <h3 id="aud4-title">Students</h3>
+                    <p class="audience-pain" id="aud4-pain">Anxious about your first real interview or college admissions?</p>
+                    <p class="audience-promise" id="aud4-promise">Build unshakable confidence with guided practice before it counts.</p>
+                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth" id="aud4-cta">Start Student Training</button>
                 </div>
                 <div class="audience-card">
                     <div class="audience-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                     </div>
-                    <h3>Negotiation Learners</h3>
-                    <p class="audience-pain">Leaving money on the table because you don't know how to negotiate?</p>
-                    <p class="audience-promise">Learn proven frameworks and practice them until negotiation feels natural.</p>
-                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth">Start Negotiation Training</button>
+                    <h3 id="aud5-title">Negotiation Learners</h3>
+                    <p class="audience-pain" id="aud5-pain">Leaving money on the table because you don't know how to negotiate?</p>
+                    <p class="audience-promise" id="aud5-promise">Learn proven frameworks and practice them until negotiation feels natural.</p>
+                    <button class="btn btn-outline btn-sm audience-cta cta-open-auth" id="aud5-cta">Start Negotiation Training</button>
                 </div>
             </div>
         </div>
@@ -792,128 +792,128 @@
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-tier">Free</div>
+                    <div class="pricing-tier" id="price-free-tier">Free</div>
                     <div class="pricing-price">
                         <span class="price-amount">$0</span>
-                        <span class="price-period">/month</span>
+                        <span class="price-period" id="price-free-period">/month</span>
                     </div>
-                    <p class="pricing-desc">Get started and experience the platform.</p>
+                    <p class="pricing-desc" id="price-free-desc">Get started and experience the platform.</p>
                     <ul class="pricing-features">
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            3 simulations per month
+                            <span id="price-free-f1">3 simulations per month</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Text-based simulation
+                            <span id="price-free-f2">Text-based simulation</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Basic AI feedback
+                            <span id="price-free-f3">Basic AI feedback</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            3 scenario types
+                            <span id="price-free-f4">3 scenario types</span>
                         </li>
                         <li class="pf-excluded">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            Voice simulation
+                            <span id="price-free-f5">Voice simulation</span>
                         </li>
                         <li class="pf-excluded">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            Resume personalization
+                            <span id="price-free-f6">Resume personalization</span>
                         </li>
                         <li class="pf-excluded">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            Analytics dashboard
+                            <span id="price-free-f7">Analytics dashboard</span>
                         </li>
                     </ul>
-                    <button class="btn btn-outline btn-block pricing-cta cta-open-auth">Get Started Free</button>
+                    <button class="btn btn-outline btn-block pricing-cta cta-open-auth" id="price-free-cta">Get Started Free</button>
                 </div>
 
                 <div class="pricing-card pricing-card-featured">
-                    <div class="pricing-popular">Most Popular</div>
-                    <div class="pricing-tier">Pro</div>
+                    <div class="pricing-popular" id="price-pro-popular">Most Popular</div>
+                    <div class="pricing-tier" id="price-pro-tier">Pro</div>
                     <div class="pricing-price">
                         <span class="price-amount" data-monthly="19" data-annual="13">$19</span>
-                        <span class="price-period">/month</span>
+                        <span class="price-period" id="price-pro-period">/month</span>
                     </div>
-                    <p class="pricing-desc">For serious preparation and consistent improvement.</p>
+                    <p class="pricing-desc" id="price-pro-desc">For serious preparation and consistent improvement.</p>
                     <ul class="pricing-features">
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited simulations
+                            <span id="price-pro-f1">Unlimited simulations</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Voice + Text simulation
+                            <span id="price-pro-f2">Voice + Text simulation</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Advanced AI feedback
+                            <span id="price-pro-f3">Advanced AI feedback</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            All scenario types
+                            <span id="price-pro-f4">All scenario types</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Resume &amp; JD upload
+                            <span id="price-pro-f5">Resume &amp; JD upload</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Performance analytics
+                            <span id="price-pro-f6">Performance analytics</span>
                         </li>
                         <li class="pf-excluded">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                            Priority AI processing
+                            <span id="price-pro-f7">Priority AI processing</span>
                         </li>
                     </ul>
-                    <button class="btn btn-primary btn-block pricing-cta cta-open-auth">Start Pro Trial</button>
+                    <button class="btn btn-primary btn-block pricing-cta cta-open-auth" id="price-pro-cta">Start Pro Trial</button>
                 </div>
 
                 <div class="pricing-card">
-                    <div class="pricing-tier">Elite</div>
+                    <div class="pricing-tier" id="price-elite-tier">Elite</div>
                     <div class="pricing-price">
                         <span class="price-amount" data-monthly="49" data-annual="33">$49</span>
-                        <span class="price-period">/month</span>
+                        <span class="price-period" id="price-elite-period">/month</span>
                     </div>
-                    <p class="pricing-desc">Maximum preparation for maximum stakes.</p>
+                    <p class="pricing-desc" id="price-elite-desc">Maximum preparation for maximum stakes.</p>
                     <ul class="pricing-features">
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Everything in Pro
+                            <span id="price-elite-f1">Everything in Pro</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Priority AI processing
+                            <span id="price-elite-f2">Priority AI processing</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Emotional tone detection
+                            <span id="price-elite-f3">Emotional tone detection</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Negotiation strategy scoring
+                            <span id="price-elite-f4">Negotiation strategy scoring</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Personalized improvement roadmap
+                            <span id="price-elite-f5">Personalized improvement roadmap</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            AI performance ranking
+                            <span id="price-elite-f6">AI performance ranking</span>
                         </li>
                         <li class="pf-included">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            White-glove onboarding
+                            <span id="price-elite-f7">White-glove onboarding</span>
                         </li>
                     </ul>
-                    <button class="btn btn-outline btn-block pricing-cta cta-open-auth">Start Elite Trial</button>
+                    <button class="btn btn-outline btn-block pricing-cta cta-open-auth" id="price-elite-cta">Start Elite Trial</button>
                 </div>
             </div>
 
-            <p class="pricing-note">All plans include a 7-day free trial. No credit card required for Free tier. Cancel anytime.</p>
+            <p class="pricing-note" id="pricing-note">All plans include a 7-day free trial. No credit card required for Free tier. Cancel anytime.</p>
         </div>
     </section>
 
@@ -927,36 +927,36 @@
 
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">How accurate is the AI evaluation?</button>
-                    <div class="faq-answer"><p>Our AI scoring engine evaluates across 5 dimensions — structure, clarity, persuasiveness, confidence, and relevance — providing detailed, actionable feedback on every response. The system continuously improves through feedback loops and model updates.</p></div>
+                    <button class="faq-question"><span id="faq-q1">How accurate is the AI evaluation?</span></button>
+                    <div class="faq-answer"><p id="faq-a1">Our AI scoring engine evaluates across 5 dimensions — structure, clarity, persuasiveness, confidence, and relevance — providing detailed, actionable feedback on every response. The system continuously improves through feedback loops and model updates.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Is my data private and secure?</button>
-                    <div class="faq-answer"><p>Absolutely. All simulation data is encrypted in transit (TLS 1.3) and at rest (AES-256). We use Firebase enterprise-grade security infrastructure. Your recordings and transcripts are never shared with third parties or used to train external models.</p></div>
+                    <button class="faq-question"><span id="faq-q2">Is my data private and secure?</span></button>
+                    <div class="faq-answer"><p id="faq-a2">Absolutely. All simulation data is encrypted in transit (TLS 1.3) and at rest (AES-256). We use Firebase enterprise-grade security infrastructure. Your recordings and transcripts are never shared with third parties or used to train external models.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">How do I manage or cancel my subscription?</button>
-                    <div class="faq-answer"><p>You can manage your subscription directly from your account dashboard. Upgrade, downgrade, or cancel with one click. No hidden fees, no cancellation penalties, and your data remains accessible for 30 days after cancellation.</p></div>
+                    <button class="faq-question"><span id="faq-q3">How do I manage or cancel my subscription?</span></button>
+                    <div class="faq-answer"><p id="faq-a3">You can manage your subscription directly from your account dashboard. Upgrade, downgrade, or cancel with one click. No hidden fees, no cancellation penalties, and your data remains accessible for 30 days after cancellation.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Do you offer enterprise or team licensing?</button>
-                    <div class="faq-answer"><p>Yes. We offer custom enterprise plans with team management dashboards, bulk pricing, SSO integration, custom scenario libraries, and dedicated account management. Contact us for a tailored quote.</p></div>
+                    <button class="faq-question"><span id="faq-q4">Do you offer enterprise or team licensing?</span></button>
+                    <div class="faq-answer"><p id="faq-a4">Yes. We offer custom enterprise plans with team management dashboards, bulk pricing, SSO integration, custom scenario libraries, and dedicated account management. Contact us for a tailored quote.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Are voice recordings stored?</button>
-                    <div class="faq-answer"><p>Voice recordings are processed in real-time for evaluation and transcription. On Free and Pro plans, audio is deleted after processing. Elite users can opt in to save recordings for replay and self-review.</p></div>
+                    <button class="faq-question"><span id="faq-q5">Are voice recordings stored?</span></button>
+                    <div class="faq-answer"><p id="faq-a5">Voice recordings are processed in real-time for evaluation and transcription. On Free and Pro plans, audio is deleted after processing. Elite users can opt in to save recordings for replay and self-review.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">What languages are supported?</button>
-                    <div class="faq-answer"><p>Currently, The Clozer supports full simulation and evaluation in English, Korean, Japanese, and Spanish. We're actively expanding to Mandarin, French, German, and Portuguese.</p></div>
+                    <button class="faq-question"><span id="faq-q6">What languages are supported?</span></button>
+                    <div class="faq-answer"><p id="faq-a6">Currently, The Clozer supports full simulation and evaluation in English, Korean, Japanese, and Spanish. We're actively expanding to Mandarin, French, German, and Portuguese.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">How does performance tracking work?</button>
-                    <div class="faq-answer"><p>Every simulation generates scores across 5 dimensions. Your analytics dashboard shows session-over-session trends, dimension-level breakdowns, percentile rankings, and personalized improvement recommendations.</p></div>
+                    <button class="faq-question"><span id="faq-q7">How does performance tracking work?</span></button>
+                    <div class="faq-answer"><p id="faq-a7">Every simulation generates scores across 5 dimensions. Your analytics dashboard shows session-over-session trends, dimension-level breakdowns, percentile rankings, and personalized improvement recommendations.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Can I use The Clozer for non-interview scenarios?</button>
-                    <div class="faq-answer"><p>Yes. Beyond job interviews, The Clozer supports sales calls, salary negotiations, investor pitches, college admissions, client presentations, and any high-stakes conversation where persuasion and clarity matter.</p></div>
+                    <button class="faq-question"><span id="faq-q8">Can I use The Clozer for non-interview scenarios?</span></button>
+                    <div class="faq-answer"><p id="faq-a8">Yes. Beyond job interviews, The Clozer supports sales calls, salary negotiations, investor pitches, college admissions, client presentations, and any high-stakes conversation where persuasion and clarity matter.</p></div>
                 </div>
             </div>
         </div>
@@ -968,7 +968,7 @@
             <h2 class="section-title" id="final-cta-title" style="margin-bottom: 1rem;">Ready to Close With Confidence?</h2>
             <p class="section-sub" id="final-cta-sub" style="margin-bottom: 2rem;">Start training today and transform your conversation skills.</p>
             <button class="btn btn-primary btn-lg cta-open-auth" id="final-cta-btn">Start Your Free Simulation</button>
-            <p class="pricing-note" style="margin-top: 1rem;">No credit card required. Start in 30 seconds.</p>
+            <p class="pricing-note" id="final-cta-note" style="margin-top: 1rem;">No credit card required. Start in 30 seconds.</p>
         </div>
     </section>
 
@@ -983,7 +983,7 @@
                         <span class="logo-icon">C</span>
                         <span>THE CLOZER</span>
                     </a>
-                    <p class="footer-tagline">The AI Performance Coach for High-Stakes Conversations.</p>
+                    <p class="footer-tagline" id="footer-tagline">The AI Performance Coach for High-Stakes Conversations.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Follow The Clozer on Twitter" class="social-link" rel="noopener noreferrer" target="_blank">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -997,29 +997,29 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Product</h4>
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#demo">Demo</a>
-                    <a href="#">Enterprise</a>
+                    <h4 id="footer-col1-title">Product</h4>
+                    <a href="#features" id="footer-col1-l1">Features</a>
+                    <a href="#pricing" id="footer-col1-l2">Pricing</a>
+                    <a href="#demo" id="footer-col1-l3">Demo</a>
+                    <a href="#" id="footer-col1-l4">Enterprise</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="#">About</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Blog</a>
+                    <h4 id="footer-col2-title">Company</h4>
+                    <a href="#" id="footer-col2-l1">About</a>
+                    <a href="#" id="footer-col2-l2">Careers</a>
+                    <a href="#" id="footer-col2-l3">Blog</a>
                     <a href="#" id="footer-contact-link">Contact</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h4 id="footer-col3-title">Legal</h4>
                     <a href="#" id="footer-privacy-link">Privacy Policy</a>
                     <a href="#" id="footer-terms-link">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">GDPR</a>
+                    <a href="#" id="footer-col3-l3">Cookie Policy</a>
+                    <a href="#" id="footer-col3-l4">GDPR</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 The Clozer. All rights reserved.</p>
+                <p id="footer-copyright">&copy; 2026 The Clozer. All rights reserved.</p>
             </div>
         </div>
     </footer>
