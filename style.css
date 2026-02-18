@@ -1586,6 +1586,13 @@ img { max-width: 100%; display: block; }
     line-height: 1.4;
 }
 
+.faq-question h3 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    line-height: inherit;
+}
+
 .faq-question::after {
     content: '+';
     font-size: 1.3rem;

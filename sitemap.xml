@@ -13,27 +13,36 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://the-clozer.pages.dev/"/>
     </url>
     <url>
-        <loc>https://the-clozer.pages.dev/#features</loc>
+        <loc>https://the-clozer.pages.dev/?lang=ko</loc>
         <lastmod>2026-02-18</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://the-clozer.pages.dev/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://the-clozer.pages.dev/?lang=ko"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://the-clozer.pages.dev/?lang=ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://the-clozer.pages.dev/?lang=es"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://the-clozer.pages.dev/"/>
     </url>
     <url>
-        <loc>https://the-clozer.pages.dev/#pricing</loc>
+        <loc>https://the-clozer.pages.dev/?lang=ja</loc>
         <lastmod>2026-02-18</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://the-clozer.pages.dev/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://the-clozer.pages.dev/?lang=ko"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://the-clozer.pages.dev/?lang=ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://the-clozer.pages.dev/?lang=es"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://the-clozer.pages.dev/"/>
     </url>
     <url>
-        <loc>https://the-clozer.pages.dev/#faq</loc>
+        <loc>https://the-clozer.pages.dev/?lang=es</loc>
         <lastmod>2026-02-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://the-clozer.pages.dev/#demo</loc>
-        <lastmod>2026-02-18</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://the-clozer.pages.dev/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://the-clozer.pages.dev/?lang=ko"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://the-clozer.pages.dev/?lang=ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://the-clozer.pages.dev/?lang=es"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://the-clozer.pages.dev/"/>
     </url>
 </urlset>
