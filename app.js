@@ -1254,6 +1254,117 @@ document.addEventListener('DOMContentLoaded', () => {
                     weights: { structure: 0.20, clarity: 0.20, persuasion: 0.25, confidence: 0.25, relevance: 0.10 }
                 }
             ]
+        },
+        restaurant: {
+            icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>',
+            label: { en: 'Restaurant Interview', ko: '음식점 면접', ja: '飲食店面接', es: 'Entrevista Restaurante' },
+            difficulty: 'Foundation',
+            questions: [
+                {
+                    text: '음식점에서 일한 경험이 있으신가요? 손님에게 최고의 서비스를 제공하기 위해 어떤 노력을 하시겠습니까?',
+                    keywords: ['서비스', '친절', '경험', '손님', '노력', '책임', '성실'],
+                    hints: ['구체적인 경험을 말하세요', '고객 만족을 위한 본인만의 방법을 설명하세요', '적극적인 태도를 보여주세요'],
+                    weights: { structure: 0.20, clarity: 0.25, persuasion: 0.20, confidence: 0.20, relevance: 0.15 }
+                },
+                {
+                    text: '바쁜 피크 타임에 손님이 음식이 늦다고 불만을 제기한다면 어떻게 대처하시겠습니까?',
+                    keywords: ['사과', '해결', '소통', '침착', '친절', '빠른', '처리'],
+                    hints: ['먼저 진심으로 사과하세요', '상황을 솔직하게 설명하세요', '해결책을 제시하세요'],
+                    weights: { structure: 0.20, clarity: 0.20, persuasion: 0.20, confidence: 0.25, relevance: 0.15 }
+                },
+                {
+                    text: '주문을 받다가 실수를 했을 때 어떻게 처리하시겠습니까?',
+                    keywords: ['솔직', '사과', '빠른', '수정', '책임', '해결', '보상'],
+                    hints: ['즉시 사과하고 책임지는 모습을 보이세요', '빠르게 문제를 해결하는 방법을 말하세요', '같은 실수를 반복하지 않겠다는 의지를 보이세요'],
+                    weights: { structure: 0.20, clarity: 0.20, persuasion: 0.15, confidence: 0.25, relevance: 0.20 }
+                },
+                {
+                    text: '함께 일하는 동료와 의견 충돌이 생겼을 때 어떻게 해결하시겠습니까?',
+                    keywords: ['대화', '협력', '이해', '팀워크', '소통', '양보', '해결'],
+                    hints: ['대화를 통한 해결 의지를 보이세요', '팀 분위기를 중요시한다는 것을 강조하세요', '구체적인 해결 방법을 제시하세요'],
+                    weights: { structure: 0.20, clarity: 0.25, persuasion: 0.15, confidence: 0.20, relevance: 0.20 }
+                },
+                {
+                    text: '이 음식점에서 일하고 싶은 이유는 무엇인가요? 앞으로 어떻게 기여하고 싶으신가요?',
+                    keywords: ['열정', '성장', '기여', '배움', '노력', '성실', '책임감'],
+                    hints: ['이 매장을 선택한 구체적인 이유를 말하세요', '본인이 기여할 수 있는 점을 강조하세요', '장기적으로 일할 의지를 보이세요'],
+                    weights: { structure: 0.25, clarity: 0.20, persuasion: 0.25, confidence: 0.20, relevance: 0.10 }
+                }
+            ]
+        },
+        cafe: {
+            icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>',
+            label: { en: 'Cafe Interview', ko: '카페 면접', ja: 'カフェ面接', es: 'Entrevista Cafetería' },
+            difficulty: 'Foundation',
+            questions: [
+                {
+                    text: '커피나 음료 제조 경험이 있으신가요? 없다면 새로운 기술을 배우기 위해 어떻게 노력하시겠습니까?',
+                    keywords: ['경험', '배움', '노력', '적극', '연습', '습득', '성장'],
+                    hints: ['있다면 구체적인 경험을 말하세요', '없다면 빠르게 배우려는 의지를 보이세요', '커피에 대한 관심이나 열정을 표현하세요'],
+                    weights: { structure: 0.20, clarity: 0.25, persuasion: 0.20, confidence: 0.20, relevance: 0.15 }
+                },
+                {
+                    text: '아침 러시 타임에 주문이 밀려 있을 때 어떻게 효율적으로 처리하시겠습니까?',
+                    keywords: ['효율', '침착', '우선순위', '빠른', '정확', '팀워크', '소통'],
+                    hints: ['침착하게 우선순위를 정하는 방법을 설명하세요', '동료와의 협력을 강조하세요', '정확성을 잃지 않는 방법을 말하세요'],
+                    weights: { structure: 0.25, clarity: 0.20, persuasion: 0.15, confidence: 0.25, relevance: 0.15 }
+                },
+                {
+                    text: '손님이 주문한 음료가 잘못 나왔다고 항의한다면 어떻게 대응하시겠습니까?',
+                    keywords: ['사과', '확인', '재제조', '친절', '신속', '해결', '만족'],
+                    hints: ['즉시 사과하고 주문을 다시 확인하세요', '빠르게 올바른 음료를 제공하겠다고 말하세요', '손님이 만족할 수 있도록 배려하는 자세를 보이세요'],
+                    weights: { structure: 0.20, clarity: 0.20, persuasion: 0.20, confidence: 0.25, relevance: 0.15 }
+                },
+                {
+                    text: '카페의 청결과 위생 관리에 대해 어떻게 생각하시나요? 구체적으로 어떻게 실천하시겠습니까?',
+                    keywords: ['청결', '위생', '정리', '점검', '규정', '철저', '습관'],
+                    hints: ['위생의 중요성을 강조하세요', '구체적인 청소 및 위생 관리 방법을 말하세요', '규정을 철저히 따르겠다는 의지를 보이세요'],
+                    weights: { structure: 0.20, clarity: 0.25, persuasion: 0.15, confidence: 0.20, relevance: 0.20 }
+                },
+                {
+                    text: '단골 손님과 좋은 관계를 유지하고 재방문을 유도하기 위해 어떤 노력을 하시겠습니까?',
+                    keywords: ['기억', '친근', '서비스', '관심', '소통', '재방문', '만족'],
+                    hints: ['손님을 기억하고 개인화된 서비스를 강조하세요', '작은 배려가 단골을 만든다는 것을 설명하세요', '긍정적인 경험을 만들기 위한 구체적인 방법을 제시하세요'],
+                    weights: { structure: 0.20, clarity: 0.20, persuasion: 0.25, confidence: 0.20, relevance: 0.15 }
+                }
+            ]
+        },
+        convenience: {
+            icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
+            label: { en: 'Convenience Store Interview', ko: '편의점 면접', ja: 'コンビニ面接', es: 'Entrevista Tienda' },
+            difficulty: 'Foundation',
+            questions: [
+                {
+                    text: '편의점 아르바이트에 지원하게 된 동기가 무엇인가요? 본인이 이 일에 적합한 이유를 말씀해 주세요.',
+                    keywords: ['동기', '적합', '성실', '책임감', '시간관리', '서비스', '노력'],
+                    hints: ['진솔한 지원 동기를 말하세요', '본인의 장점과 이 일의 연관성을 설명하세요', '열심히 하겠다는 의지를 보이세요'],
+                    weights: { structure: 0.20, clarity: 0.25, persuasion: 0.25, confidence: 0.20, relevance: 0.10 }
+                },
+                {
+                    text: '야간 근무나 주말 근무가 가능하신가요? 본인의 가능한 스케줄에 대해 말씀해 주세요.',
+                    keywords: ['가능', '유연', '스케줄', '조율', '약속', '출근', '성실'],
+                    hints: ['가능한 시간을 구체적으로 말하세요', '스케줄 변경 시 미리 알리겠다는 책임감을 보이세요', '근무에 적극적으로 임하겠다는 의지를 표현하세요'],
+                    weights: { structure: 0.20, clarity: 0.30, persuasion: 0.15, confidence: 0.20, relevance: 0.15 }
+                },
+                {
+                    text: '재고 정리 중 유통기한이 지난 제품을 발견했을 때 어떻게 처리하시겠습니까?',
+                    keywords: ['즉시', '보고', '분리', '폐기', '규정', '정직', '책임'],
+                    hints: ['즉시 해당 제품을 분리하고 담당자에게 보고하세요', '규정에 따라 폐기 처리하는 절차를 말하세요', '정직하고 책임감 있게 처리하겠다는 자세를 보이세요'],
+                    weights: { structure: 0.25, clarity: 0.20, persuasion: 0.15, confidence: 0.20, relevance: 0.20 }
+                },
+                {
+                    text: '손님이 거스름돈이 잘못됐다고 항의한다면 어떻게 대응하시겠습니까?',
+                    keywords: ['침착', '확인', '사과', '해결', '정확', '정직', '신뢰'],
+                    hints: ['먼저 침착하게 상황을 확인하세요', '실수가 맞다면 즉시 사과하고 수정하세요', '영수증이나 POS 기록을 확인하는 방법을 말하세요'],
+                    weights: { structure: 0.20, clarity: 0.20, persuasion: 0.15, confidence: 0.25, relevance: 0.20 }
+                },
+                {
+                    text: '혼자 매장을 관리하게 될 때 가장 중요하게 여겨야 할 것은 무엇이라고 생각하십니까?',
+                    keywords: ['책임감', '안전', '청결', '재고', '서비스', '판단', '보고'],
+                    hints: ['혼자 일할 때 필요한 자기 관리 능력을 강조하세요', '돌발 상황에 대한 대처 방법을 말하세요', '필요 시 책임자에게 보고하는 것의 중요성을 언급하세요'],
+                    weights: { structure: 0.25, clarity: 0.20, persuasion: 0.15, confidence: 0.25, relevance: 0.15 }
+                }
+            ]
         }
     };
 
