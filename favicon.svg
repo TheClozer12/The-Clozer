@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- C arc in purple - open at top-right -->
+  <path d="M 70 18 A 32 32 0 1 0 70 82" fill="none" stroke="#7C4DFF" stroke-width="13" stroke-linecap="butt"/>
+  <!-- T horizontal bar in dark gray -->
+  <rect x="22" y="26" width="52" height="13" rx="3" fill="#52525E"/>
+  <!-- T vertical stem in dark gray -->
+  <rect x="44" y="26" width="12" height="48" rx="2" fill="#52525E"/>
+</svg>
