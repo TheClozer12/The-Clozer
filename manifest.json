@@ -1,0 +1,21 @@
+{
+    "name": "The Clozer — AI Performance Coach for High-Stakes Conversations",
+    "short_name": "The Clozer",
+    "description": "Master interviews, negotiations, and persuasion with AI-powered real-time simulation. Get instant feedback across 5 scoring dimensions.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#0f1115",
+    "theme_color": "#6C5CE7",
+    "orientation": "portrait-primary",
+    "lang": "en",
+    "categories": ["business", "education", "productivity"],
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

@@ -1,4 +1,28 @@
-User-agent: *
+# The Clozer — AI Performance Coach
+# https://the-clozer.pages.dev/
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /firebase-debug.log
+
+# Naver
+User-agent: Yeti
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
 Allow: /
 
-Sitemap: https://theclozer12.github.io/The-Clozer/sitemap.xml
+# All other crawlers
+User-agent: *
+Allow: /
+Disallow: /firebase-debug.log
+Disallow: /.git/
+Disallow: /.idx/
+Disallow: /.claude/
+Disallow: /.vscode/
+
+# Sitemap
+Sitemap: https://the-clozer.pages.dev/sitemap.xml
