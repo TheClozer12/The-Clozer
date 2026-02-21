@@ -2722,3 +2722,103 @@ img { max-width: 100%; display: block; }
     .leave-modal-actions { flex-direction: column; }
     .leave-modal-actions .btn { width: 100%; }
 }
+
+/* ==================== SNS SHARE WIDGETS ==================== */
+
+/* Floating share sidebar */
+.share-float {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--bg-card-border);
+    border-right: none;
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
+    padding: 14px 8px;
+    z-index: 900;
+    gap: 8px;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+}
+
+.share-float.visible {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+.share-float-label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.share-float .a2a_kit {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.share-float .a2a_kit a {
+    display: block !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.share-float .a2a_kit a:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+}
+
+@media (max-width: 768px) {
+    .share-float { display: none; }
+}
+
+/* Footer share section */
+.footer-share {
+    border-top: 1px solid var(--bg-card-border);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.footer-share-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    margin: 0;
+}
+
+.footer-share .a2a_kit {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-share .a2a_kit a {
+    display: block !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-share .a2a_kit a:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
