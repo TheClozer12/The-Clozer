@@ -341,7 +341,7 @@ img { max-width: 100%; display: block; }
     z-index: 300;
     box-shadow: var(--shadow-lg);
 }
-.lang-dropdown.open { display: block; }
+.lang-dropdown.active { display: block; }
 
 .lang-option {
     display: block;
